@@ -27,7 +27,7 @@ jobs:
       - name: Docker build and push
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: docker-hub-repo/image-name
+          image: ccdsergio/sergioapp
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
