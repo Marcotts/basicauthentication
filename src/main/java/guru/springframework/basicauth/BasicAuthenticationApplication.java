@@ -11,5 +11,6 @@ public class BasicAuthenticationApplication {
 	}
 
 //	This is a test to start application from github
+	// Test numéro deux
 
 }
