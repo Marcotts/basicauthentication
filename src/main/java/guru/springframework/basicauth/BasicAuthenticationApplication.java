@@ -10,4 +10,6 @@ public class BasicAuthenticationApplication {
 		SpringApplication.run(BasicAuthenticationApplication.class, args);
 	}
 
+//	This is a test to start application from github
+
 }
