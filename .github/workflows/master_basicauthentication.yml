@@ -34,7 +34,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -48,6 +48,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'basicauthentication'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_cbd0c70667a544ae8de654581e8d0b31 }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F016025D3D644F8B87F98986B97AFB4E }}
           package: '*.jar'
