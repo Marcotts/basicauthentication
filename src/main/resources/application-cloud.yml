@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          endpoint: https://keyvaultauthenticationv2.vault.azure.net/
+//          endpoint: ${ENDPOINT}

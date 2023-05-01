@@ -1,5 +1,6 @@
 package guru.springframework.basicauth.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,12 +8,16 @@ import java.security.SecureRandom;
 
 @RestController
 public class SecureMessegeController {
+
+	@Value("${listeUtilisateur:listeutilisateurDefault}")
+	private String listeUtilisateur;
+	
     @GetMapping("/api/v1/password")
     public String GenerateRandomPassword() {
 
         String generatedPassword = generatePassword(8);
 
-        return "Your generated secret password is " + generatedPassword;
+        return "Your generated secret password is " + generatedPassword + ":" + listeUtilisateur;
     }
 
     private String generatePassword(int len) {
