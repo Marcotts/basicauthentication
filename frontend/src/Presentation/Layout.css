@@ -1,0 +1,30 @@
+.layout>* {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.layout {
+    height: 50%;
+    background-color: rgba(255, 242, 242, 0);
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 100px auto 100px;
+    gap: 10px;
+}
+
+.layout header,
+.layout footer {
+    grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 800px) {
+    .layout {
+        grid-template-rows: 100px auto auto 100px;
+    }
+
+    .layout main,
+    .layout aside {
+        grid-column: 1 / span 2;
+    }
+}

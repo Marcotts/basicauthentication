@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 3px dashed #ccc;
+    border-radius: 10px;
+    align-items: stretch;
+    justify-items: stretch;
+    flex-basis: 10px;
+}
+
+.card-image {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: inherit;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card-content h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    padding-bottom: 10px;
+    height: 45px;
+}
