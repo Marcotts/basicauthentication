@@ -20,12 +20,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         //you can write "/h2-console/**", in first bottom lıne
         http.authorizeRequests().antMatchers("/**/favicon.ico","/css/**","/js/**","/images/**","/webjars/**","/login.html").permitAll();
 
-        //user yetkilendirme bölümü
         //only entry links called /rest/** anybody has ROLE_EDITOR and ROLE_ADMIN
         http.authorizeRequests().antMatchers("/h2/**").permitAll();
         http.authorizeRequests().antMatchers("/user/**").permitAll();
         http.authorizeRequests().antMatchers("/api/**").permitAll();
         http.authorizeRequests().antMatchers("/films/**").permitAll();
+        http.authorizeRequests().antMatchers("/series/**").permitAll();
         http.authorizeRequests().antMatchers("/actuator/**").access("hasRole('USERS')");
 
 

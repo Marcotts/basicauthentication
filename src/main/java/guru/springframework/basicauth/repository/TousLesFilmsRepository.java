@@ -13,6 +13,9 @@ public interface TousLesFilmsRepository extends JpaRepository<TousLesFilms, Long
     @Query(value = "Select * from TousLesFilms where id = :IDKEY", nativeQuery = true)
     List<TousLesFilms> findMyQuery(@Param("IDKEY") Long monPropreQuery);
 
+    @Query(value = "Select * from TousLesFilms where ANNEE = 2022", nativeQuery = true)
+    List<TousLesFilms> findAllMyAll();
+
     @Query(value = "Select \"TitreFrancais\" from TousLesFilms where id = :IDKEY", nativeQuery = true)
     String findMyQuery3(@Param("IDKEY") Long monPropreQuery);
 

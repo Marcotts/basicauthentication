@@ -20,7 +20,7 @@ public class FilmsController {
     @GetMapping("/films/all")
     public ResponseEntity<List<TousLesFilms>> getUsers() throws IOException {
 
-        return ResponseEntity.ok(this.tousLesFilmsRepository.findAll());
+        return ResponseEntity.ok(this.tousLesFilmsRepository.findAllMyAll());
     }
 
     @GetMapping("/films/one/{id}")

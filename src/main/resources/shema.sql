@@ -17,3 +17,8 @@ CREATE SEQUENCE SEQ_BATCH_PER_DAY
 
 INSERT INTO User (NAME, SURNAME, EMAIL, USERNAME, PASSWORD) VALUES('NAME3', 'SURNAME3', 'EMAIL3', 'USERNAME3', 'PASSWORD3');
 
+
+create table test(id bigint auto_increment, name varchar(255));
+insert into test(name) values('hello');
+insert into test(name) values('world');
+select * from test;

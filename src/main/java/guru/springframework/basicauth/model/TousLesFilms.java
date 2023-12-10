@@ -17,18 +17,18 @@ public class TousLesFilms {
     @Id
     private BigInteger Id;
 
-    @Column(name = "TITRE_FRANCAIS")
-    private String titre_Français;
-    @Column(name = "TITRE_ANGLAIS")
+    @Column(name = "TITREFRANCAIS")
+    private String titreFrançais;
+    @Column(name = "TITREANGLAIS")
     private String titreAnglais;
     @Column(name = "ANNEE")
     private String annee;
     @Column(name = "POCHETTE")
     private String pochette;
-    @Column(name = "Disque_Francais")
-    private String disque_Francais;
-    @Column(name = "Disque_Anglais")
-    private String disque_Anglais;
+    @Column(name = "DISQUEFRANCAIS")
+    private String disqueFrancais;
+    @Column(name = "DISQUEANGLAIS")
+    private String disqueAnglais;
     @Column(name = "ACT")
     private String act;
     @Column(name = "ANIM")
@@ -75,33 +75,33 @@ public class TousLesFilms {
     private String west;
     @Column(name = "NOTE")
     private String note;
-    @Column(name = "Nombre_De_Voteurs")
-    private String nombre_De_Voteurs;
+    @Column(name = "NOMBREDEVOTEURS")
+    private String nombreDeVoteurs;
     @Column(name = "DUREE")
     private String duree;
     @Column(name = "PRODUCTEUR")
     private String producteur;
-    @Column(name = "En_Vedette")
-    private String en_Vedette;
-    @Column(name = "Audio_Francais")
-    private String audio_Francais;
-    @Column(name = "Audio_Anglais")
-    private String audio_Anglais;
+    @Column(name = "ENVEDETTE")
+    private String enVedette;
+    @Column(name = "AUDIOFRANCAIS")
+    private String audioFrancais;
+    @Column(name = "AUDIOANGLAIS")
+    private String audioAnglais;
     @Column(name = "TRAITE")
     private String traite;
-    @Column(name = "En_DOUBLE")
-    private String en_Double;
-    @Column(name = "Dernier_Episode_Visionne")
-    private String dernier_episode_Visionne;
-    @Column(name = "En_3D")
-    private String en_3D;
-    @Column(name = "Annee_Saison")
-    private String annee_Saison;
-    @Column(name = "Derniere_saison")
-    private String derniere_Saison;
-    @Column(name = "Produit_Creee_par")
-    private String produit_Creee_Par;
-    @Column(name = "AdresseResume")
+    @Column(name = "ENDOUBLE")
+    private String enDouble;
+    @Column(name = "DERNIEREPISODEVISIONNE")
+    private String dernierEpisodeVisionne;
+    @Column(name = "FILM3D")
+    private String film3d;
+    @Column(name = "ANNEESSAISON")
+    private String anneesSaison;
+    @Column(name = "DERNIERESAISON")
+    private String derniereSaison;
+    @Column(name = "PRODUITCREEPAR")
+    private String produitCreePar;
+    @Column(name = "ADRESSERESUME")
     private String adresseResume;
     @Column(name = "NOUVEAU")
     private String nouveau;
@@ -139,10 +139,10 @@ public class TousLesFilms {
     private String source;
     @Column(name = "Y")
     private String Y;
-    @Column(name = "Film_Etranger")
-    private String film_etranger;
-    @Column(name = "Mini_Serie")
-    private String mini_Serie;
+    @Column(name = "FILMETRANGER")
+    private String filmEtranger;
+    @Column(name = "MINISERIE")
+    private String miniSerie;
     @Column(name = "Z")
     private String Z;
     @Column(name = "A")
@@ -151,7 +151,7 @@ public class TousLesFilms {
     private String B;
     @Column(name = "CATASTROPHE")
     private String catastrophe;
-    @Column(name = "Version_Originale")
+    @Column(name = "VERSIONORIGINALE")
     private String version_Originale;
     @Column(name = "C")
     private String C;
@@ -161,16 +161,16 @@ public class TousLesFilms {
     private String tous;
     @Column(name = "VUE")
     private String vue;
-    @Column(name = "Pas_Vue")
-    private String pas_Vue;
-    @Column(name = "Adresse_Series")
-    private String adresse_Series;
-    @Column(name = "Coup_de_Coeur")
-    private String coup_De_Coeur;
-    @Column(name = "Serie_En_Cours")
-    private String serie_En_Cours;
-    @Column(name = "Serie_Complete")
-    private String serie_Complete;
+    @Column(name = "PASVUE")
+    private String pasVue;
+    @Column(name = "ADRESSESERIES")
+    private String adresseSeries;
+    @Column(name = "COUPDECOEUR")
+    private String coupDeCoeur;
+    @Column(name = "SERIEENCOURS")
+    private String serieEnCours;
+    @Column(name = "SERIECOMPLETE")
+    private String serieComplete;
     @Column(name = "ESPION")
     private String espion;
     @Column(name = "ANTIQUE")
@@ -179,10 +179,10 @@ public class TousLesFilms {
     private String politique;
     @Column(name = "PROCES")
     private String proces;
-    @Column(name = "Super_Heros")
-    private String super_Heros;
-    @Column(name = "Tueur_en_Serie")
-    private String tueur_En_Serie;
+    @Column(name = "SUPERHEROS")
+    private String superHeros;
+    @Column(name = "TUEURENSERIE")
+    private String tueurEnSerie;
     @Column(name = "VAMPIRE")
     private String vampire;
     @Column(name = "ZOMBIE")
@@ -203,28 +203,28 @@ public class TousLesFilms {
     private String scientifique;
     @Column(name = "ARCHEOLOGIE")
     private String archeologie;
-    @Column(name = "Mon_Vote")
-    private String mon_Vote;
-    @Column(name = "Commentaire_Jules")
-    private String commentaire_Jules;
+    @Column(name = "MONVOTE")
+    private String monVote;
+    @Column(name = "COMMENTAIRESJULES")
+    private String commentairesJules;
     @Column(name = "SOCIETE")
     private String societe;
     @Column(name = "RELIGION")
     private String religion;
     @Column(name = "FORMAT")
     private String format;
-    @Column(name = "Commentaire_Gerald")
-    private String commentaire_Gerald;
+    @Column(name = "COMMENTAIRESGERALD")
+    private String commentairesGerald;
     @Column(name = "qtp")
     private String qtp;
     @Column(name = "E")
     private String E;
-    @Column(name = "Nouv_Com_Jules")
-    private String nouv_Com_Jules;
-    @Column(name = "Nouv_Com_Gerald")
-    private String nouv_Com_Gerald;
+    @Column(name = "NOUVCOMJULES")
+    private String nouvComJules;
+    @Column(name = "NOUVCOMGERALD")
+    private String nouvComGerald;
     @Column(name = "EXTRATERRESTRE")
     private String extraterrestre;
-    @Column(name = "Selection_Du_Jour")
-    private String selection_Du_Jour;
+    @Column(name = "SELECTIONDUJOUR")
+    private String selectionDuJour;
 }
