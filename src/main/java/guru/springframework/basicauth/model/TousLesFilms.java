@@ -18,7 +18,7 @@ public class TousLesFilms {
     private BigInteger Id;
 
     @Column(name = "TITREFRANCAIS")
-    private String titreFrançais;
+    private String titreFrancais;
     @Column(name = "TITREANGLAIS")
     private String titreAnglais;
     @Column(name = "ANNEE")
